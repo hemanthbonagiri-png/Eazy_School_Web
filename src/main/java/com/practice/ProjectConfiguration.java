@@ -21,10 +21,10 @@ public class ProjectConfiguration {
 
 
     @Bean
-    Person person(){
+    Person person(Vehicle vehicle){
         var pers = new Person();
         pers.setName("Lucy");
-        pers.setVehicle(vehicle());
+        pers.setVehicle(vehicle);
         return pers;
     }
 
